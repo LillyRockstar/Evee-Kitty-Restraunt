@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>baby kitty cat</title>
+        <style>
+            body{
+                background-image: linear-gradient(to bottom,blue,teal,aqua);
+                background-repeat: no-repeat;
+                background-size: cover;
+                min-height: 100vh;
+            }</style>
+            
+            <script>
+                let counter = 0;
+                function count1(){
+                    counter++;
+                    document.querySelector('h1').textContent = counter;
+                }
+                function count2(){
+                    counter--;
+                    document.querySelector('h1').textContent = counter;
+                }
+                 
+            </script>
+    </head>
+    <body>
+        <h1>0</h1>
+        <button onclick="count1()">+</button>
+        <button onclick="count2()">-</button>
+
+    </body>
+</html>

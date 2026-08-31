@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head><Title>evee kitty restraunt</Title>
+         <link rel="icon" type="image/x-icon" href="evee icon.png">
         <style>
             body{
                 background-image: linear-gradient(to bottom,aqua,teal,blue);
@@ -44,10 +45,25 @@
             <input type="password" id="password" name="password" placeholder="Enter your password" required>
             <br>
             <br>
+            <input type="submit" value="click me">
           <a href="menu.html">
+
     <button type="button">Create an Account</button>
+    <button type="button" onclick="lily()">Click Me</button>
 </a>
         </form>
         </div>
+        <script>
+           alert("Welcome to evee kitty restraunt");
+           function lily(){
+            alert("Thank you for visiting evee kitty restraunt");
+           }
+              document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('form').onsubmit = function() {
+                const name = document.querySelector('#name').value;
+                alert(`Hello, ${name}`);
+            };
+        });
+        </script>
     </body>
 </html>
